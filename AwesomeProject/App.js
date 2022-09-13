@@ -9,7 +9,7 @@ const Flex = () => {
     useEffect(() => { count.length == 0 ? setString((v) => "array empty") : setString((v) => "array not empty") });
     return (
         <View >
-            <View style={[styles.top]}>
+         <View style={[styles.top]}>
                 <Pressable style={[styles.topButton, styles.darkBlue]} onPressIn={() => { setCount([...count, "deneme"]) }} onPressOut={() => {setCountString(count.toString()) }}>
                     <Text style={[styles.buttonText]}>{(count.length).toString()}</Text>
                 </Pressable>
